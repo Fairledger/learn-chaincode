@@ -102,6 +102,7 @@ func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string)
     return nil, nil
 }
 
+/* Read function*/
 func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
     var key, jsonResp string
     var err error
